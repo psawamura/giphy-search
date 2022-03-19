@@ -9,9 +9,14 @@ This app allows you to search for .gifs using GIPHY api (https://developers.giph
 REACT_APP_GIPHY_API_KEY=${YOUR API KEY HERE}
 ```
 
-## Building and running with Docker
+## Running the application
+### Locally
+```
+npm start
+```
+
+### With Docker
 ```
 docker build -t psawamura/docker-react-dev -f Dockerfile.dev .
 docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app psawamura/docker-react-dev
-
 ```
